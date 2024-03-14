@@ -14,7 +14,7 @@ export default function App() {
       <div className="App">
       <Loader />
         <Canvas shadows camera={{ position: [0, 0, 20], fov:50 }}>
-          <color attach="background" args={['#15151a']} />
+          <color attach="background" args={['grey']} />
           <Suspense fallback={null}>
           <TacomaModel scale={3.5} position={[0, -1.1, 0]} />
           </Suspense>
