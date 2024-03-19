@@ -10,10 +10,10 @@ export default function App() {
 
   return (
 
-    <CustomizationProvider>
+<CustomizationProvider>
       <div className="App">
       <Loader />
-        <Canvas shadows camera={{ position: [0, 0, 20], fov:50 }}>
+        <Canvas shadows camera={{ position: [0, 0, 20], fov:40 }}>
           <color attach="background" args={['grey']} />
           <Suspense fallback={null}>
           <TacomaModel scale={3.5} position={[0, -1.1, 0]} />
@@ -49,7 +49,7 @@ export default function App() {
           </Environment>
           <ContactShadows position={[0, -0.8, 0.0]} opacity={0.75} scale={10} blur={2.5} far={0.8} />
           {/* <OrbitControls minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} enableZoom={true} enablePan={false} /> */}
-          <OrbitControls autoRotate enablePan={false} enableZoom={true} minPolarAngle={Math.PI / 2.2} maxPolarAngle={Math.PI / 2.2} />
+          <OrbitControls    enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2.8} maxPolarAngle={Math.PI / 2.8} />
         </Canvas>
         <Configurator />
       </div>
@@ -58,4 +58,5 @@ export default function App() {
 
   )
 }
+
 
