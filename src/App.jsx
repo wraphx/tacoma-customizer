@@ -42,14 +42,14 @@ export default function App() {
             <Lightformer intensity={2} rotation-x={Math.PI / 2} position={[0, 4, 6]} scale={[10, 1, 1]} />
             <Lightformer intensity={2} rotation-x={Math.PI / 2} position={[0, 4, 9]} scale={[10, 1, 1]} />
             {/* Sides */}
-            <Lightformer intensity={25} rotation-y={Math.PI / 2} position={[-50, 2, 0]} scale={[100, 2, 1]} />
-            <Lightformer intensity={25} rotation-y={-Math.PI / 2} position={[50, 2, 0]} scale={[100, 2, 1]} />
+            <Lightformer intensity={20} rotation-y={Math.PI / 2} position={[-50, 2, 0]} scale={[100, 2, 1]} />
+            <Lightformer intensity={20} rotation-y={-Math.PI / 2} position={[50, 2, 0]} scale={[100, 2, 1]} />
             {/* Key */}
             <Lightformer form="ring" color="gray" intensity={10} scale={2} position={[10, 5, 10]} onUpdate={(self) => self.lookAt(0, 0, 0)} />
           </Environment>
           <ContactShadows position={[0, -0.8, 0.0]} opacity={0.75} scale={10} blur={2.5} far={0.8} />
           {/* <OrbitControls minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} enableZoom={true} enablePan={false} /> */}
-          <OrbitControls    enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2.8} maxPolarAngle={Math.PI / 2.8} />
+          <OrbitControls    enablePan={false} enableZoom={true} minPolarAngle={Math.PI / 2.8} maxPolarAngle={Math.PI / 2.1} />
         </Canvas>
         <Configurator />
       </div>
